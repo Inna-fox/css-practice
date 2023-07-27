@@ -1,0 +1,28 @@
+<div class="hero_blok">
+    {{#with hero}}
+        <h1 class="hero_title">{{title}}</h1>
+        <p class="hero_text">{{description}}</p>
+        <div class="button">
+            <a class="hero_button" href="{{button.url}}">{{button.text}}</a>
+        </div>
+    {{/with}}
+</div>
+
+<div class="blok_about">
+    {{#with about}}
+        <strong class="about_title">{{heading}}</strong>
+        <p class="about_text">{{info}}</p>
+    {{/with}}
+</div>
+
+<div class="blok_articles">
+    <div class="articles">
+        <div class="articles_title">Our Articles</div>
+        <div class="articles_btn">
+            <a href="#" class="articles_btn_text">View All</a>
+        </div>
+    </div>
+    {{>articleCardDark}}
+</div>
+
+    
