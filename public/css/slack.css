@@ -1,4 +1,4 @@
-@layer normalize, component, variant, adaptive, main;
+@layer normalize, component, variant, main, adaptive;
 
 @font-face {
     font-family:'HelveticaNeueBold';
