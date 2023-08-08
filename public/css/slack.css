@@ -29,7 +29,7 @@
         display: block;
         background-repeat: no-repeat;
         background-position: center center;
-    };
+    }
 } 
 
 @layer variant {
@@ -53,6 +53,14 @@
         width: 24px;
         height: 14px;
         background-image: url('/svg/arrow_right.svg');
+    }
+
+    .icon_footer {
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center center;
+        align-items: flex-end;
+
     }
 }
 
@@ -98,6 +106,7 @@ body {
 @layer main {
     .page {
         display: grid;
+        width: max-content;
     }
     .page_section {
         display: flex;
@@ -187,7 +196,6 @@ body {
         background-image: url('/img/features.png');
         background-repeat: no-repeat;
         background-position: right top;
-
     }
 
     .features_title {
@@ -244,6 +252,159 @@ body {
 
     .features_grid_4 > .feat_card:first-of-type {
         grid-row: 1 / 3;
+    }
+
+    .features_grid_3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: var(--spacing-3);
+    }
+
+    .feat_card_big {
+        grid-row: 1 / 3;
+        padding: var(--spacing-3);
+        background-color: var(--color-white);
+        gap: var(--spacing-3);
+        display: grid;
+        font-size: var(--size-2);
+        min-width: 300px;
+    }
+
+    .features_grid_3 > .feat_card_big:first-of-type {
+        margin-left: 330px;
+    }
+
+    .features2 {
+        padding-top: 80px;
+        padding-bottom: 150px;
+
+        display: grid;
+        gap: var(--spacing-5);
+
+        background-image: url('/img/feature-2.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+
+    .features2_info {
+        margin-left: 630px;
+    }
+
+    .deliver_section {
+        background-color: var(--color-white);
+        display: flex;
+        width: 1020px;
+        align-items: center;
+        gap: 38px;
+        
+    }
+
+    .deliver {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr;
+        gap: 24px;
+        margin-top: 70px;
+        margin-left: 650px;
+        margin-bottom: 50px;
+    }
+    .deliv_img {
+        width: 556px;
+        height: 230px;
+
+        grid-row: 1 / 4;
+
+    }
+
+    .quote {
+        color: var(--color-black);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: -0.3px;
+        width: 387px;
+    }
+
+    .author {
+        color: var(--color-black);
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .del_img {
+        width: 147px;
+        height: 40px;
+    }
+
+    .footer {
+        padding: 110px 345px 80px 345px;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+
+    .footer_block {
+        display: flex;
+        padding: 0px 0.05px 6.94px 0px;
+        align-items: flex-start;
+        gap: 75.47px;
+    }
+
+    .footer_card {
+        background: #FFF;
+        box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+
+        width: 285px;
+        height: 420px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .img_title {
+        color: #454245;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        padding-left: 12px;
+    }
+
+    .fcard_title {
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        padding-left: 12px;
+    }
+
+    .footer_img {
+        width: 285px;
+        height: 210px;
+        flex-shrink: 0;
+    }
+
+    .card_link {
+        color: #1264A3;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding-left: 12px;
+        padding-bottom: 12px;
+    }
+
+    .footer_title {
+        color: var(--color-black);
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: -0.3px;
+        padding-bottom: 40px;
     }
 }
 
